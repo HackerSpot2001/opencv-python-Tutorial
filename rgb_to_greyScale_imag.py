@@ -1,0 +1,23 @@
+import cv2
+img = cv2.imread("1.jpg")
+cv2.imshow("Oiginal Image",img)
+# greyScale = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+# cv2.imshow("Grey Scale Image",greyScale)
+# greyScale = cv2.cvtColor(img,cv2.COLOR_RGB2BGRA)
+# cv2.imshow("Grey Scale Image",greyScale)
+greyScale1 = cv2.cvtColor(img,cv2.COLOR_RGB2HLS)
+cv2.imshow("Grey1 Scale Image",greyScale1)
+greyScale2 = cv2.cvtColor(img,cv2.COLOR_RGB2HLS_FULL)
+cv2.imshow("Grey2 Scale Image",greyScale2)
+greyScale3 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+cv2.imshow("Grey3 Scale Image",greyScale3)
+greyScale4 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV_FULL)
+cv2.imshow("Grey4 Scale Image",greyScale4)
+greyScale5 = cv2.cvtColor(img,cv2.COLOR_RGB2LAB)
+cv2.imshow("Grey5 Scale Image",greyScale5)
+
+
+# img = cv2.imread("1.jpg",0)
+# cv2.imshow("GreyScale Image Image",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
