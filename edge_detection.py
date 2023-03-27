@@ -1,9 +1,8 @@
-#!/usr/bin/python3
 import cv2
 import numpy as np
 
 img = cv2.imread("1.png",0)
-cv2.imshow("Orinal Image",img)
+cv2.imshow("Original Image",img)
 h,w = img.shape[:2]
 
 sobal_x = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)

@@ -1,5 +1,5 @@
 import cv2
-img = cv2.imread("1.jpg")
+img = cv2.imread("1.png")
 cv2.imshow("Oiginal Image",img)
 # greyScale = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 # cv2.imshow("Grey Scale Image",greyScale)
